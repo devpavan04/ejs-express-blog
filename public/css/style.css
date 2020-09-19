@@ -1,0 +1,128 @@
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #494d5f;
+}
+
+#part-1,
+#part-2 {
+  flex: 1;
+}
+
+#part-1 h4 {
+  text-align: left;
+  font-size: 2.2rem;
+  margin: 0;
+  padding-left: 10rem;
+  color: #fff;
+}
+
+#part-1 h4 span {
+  margin-right: 1.4rem;
+}
+
+#part-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#part-2 a {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #494d5f;
+}
+
+.footer p {
+  text-align: center;
+  margin: 0;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 1600px;
+  padding-top: 4rem;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button {
+  display: block;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  nav {
+    display: block;
+  }
+
+  #part-1 h4 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  #part-2 {
+    margin-top: 3rem;
+  }
+
+  #part-2 a:last-child {
+    display: none;
+  }
+
+  .container {
+    padding-top: 2rem;
+    margin: 0 auto;
+  }
+
+  .container h2 {
+    text-align: center;
+  }
+
+  .container p {
+    text-align: justify;
+  }
+
+  .container button {
+    margin: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+<%- include('partials/header.ejs') %>
+<div class="container">
+  <h2><%= requestedPost.title %></h2>
+  <p><%= requestedPost.content %></p>
+  <form action="/delete/<%= requestedPost.title %>" method="post">
+    <button type="submit">Delete Post</button>
+  </form>
+</div>
+<%- include('partials/footer.ejs') %>
